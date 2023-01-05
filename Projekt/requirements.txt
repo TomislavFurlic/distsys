@@ -1,0 +1,14 @@
+aiohttp
+async-timeout
+attrs
+charset-normalizer
+frozenlist
+idna
+multidict
+mysql-connector-python
+typing-extensions
+yarl
+aiofiles
+urllib3
+flask
+requests
