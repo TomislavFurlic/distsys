@@ -23,9 +23,10 @@ Ovaj projekt sadrži četiri mikroservisa u Pythonu:
 
 ## Postavljanje
 1. Klonirajte ili preuzmite repozitorij
-2. Navigirajte u direktorij projekta
-3. Instalirajte potrebne pakete koristeći naredbu "pip": ```pip install -r requirements.txt```
-4. Pokrenite svaki mikroservis pokretanjem skripte na svom lokalnom računalu:
+2. Potrebno je preuzeti i FakeDataset.json datoteku putem poveznice https://www.mediafire.com/file/8iqjc098cdkbrjc/file-000000000040.json/file, te istu postaviti u glavni direktorij
+3. Navigirajte u direktorij projekta
+4. Instalirajte potrebne pakete koristeći naredbu "pip": ```pip install -r requirements.txt```
+5. Pokrenite svaki mikroservis pokretanjem skripte na svom lokalnom računalu:
 ```
 Windows naredbe:
 python app.py
