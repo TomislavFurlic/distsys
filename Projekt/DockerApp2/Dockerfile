@@ -1,9 +1,0 @@
-FROM python:3.8
-
-COPY app2.py /app2.py
-
-RUN pip install aiohttp flask
-
-EXPOSE 5001
-
-CMD ["python", "app2.py"]
