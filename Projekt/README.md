@@ -93,4 +93,16 @@ ls - za pregled sadržaja trenutnog direktorija
 5. Ako želite pokrenuti više mikroservisa, kreirajte sliku za svaki mikroservis i pokrenite kontenjer za svaki od njih s različitim portovima.
 
 **Primjer:**
-Ako želite pokrenuti mikroservis app.py, prvo kopirajte sadržaj Dockerfile m0.txt u Dockerfile, zatim izvršite docker build -t app . za kreiranje slike, i docker run -p 5000:5000 app za pokretanje kontenjera.
+Ako želite pokrenuti mikroservis app.py, prvo kopirajte sadržaj Dockerfile m0.txt u Dockerfile, zatim izvršite ```docker build -t app```. za kreiranje slike, i ```docker run -p 5000:5000 app``` za pokretanje kontenjera.
+
+## Unittest
+1. Testiranje mikroservisa app.py kroz unitTestApp.py:
+Da biste pokrenuli testove za mikroservis app.py, upotrijebite naredbu ```python -m unittest unitTestApp.py```. Testovi će proći sve funkcionalnosti mikroservisa app.py i provjeriti da li se podaci ispravno dohvaćaju iz baze podataka, te da li se ispravno vraćaju u odgovoru na zahtjev.
+
+2. Testiranje mikroservisa app2.py kroz unitTestApp2.py:
+Da biste pokrenuli testove za mikroservis app2.py, upotrijebite naredbu ```python -m unittest unitTestApp2.py```. Testovi će proći sve funkcionalnosti mikroservisa app2.py i provjeriti da li se E-learning API ispravno poziva te da li se podaci ispravno šalju na slijedeći mikroservis.
+
+3. Testiranje mikroservisa app3.py kroz unitTestApp3.py:
+Da biste pokrenuli testove za mikroservis app3.py, upotrijebite naredbu ```python -m unittest unitTestApp3.py```. Testovi će proći sve funkcionalnosti mikroservisa app3.py, provjeriti da li se podaci filtriraju na ispravan način te da li se ispravno šalju prema slijedećem mikroservisu.
+
+4. Da biste pokrenuli testove za mikroservis app4.py, upotrijebite naredbu ```python -m unittest unitTestApp4.py```. Testovi će proći sve funkcionalnosti mikroservisa app4.py i provjeriti da li se podaci ispravno dohvaćaju iz zahtjeva, te da li se ispravno upisuju u kreirane datoteke. S obzirom da se testovi provode asinkrono, potrebno je dati dovoljno vremena za njihovo izvršavanje te provjeriti da li su datoteke kreirane i da li sadrže ispravne podatke. Nakon testiranja, datoteke se brišu.
