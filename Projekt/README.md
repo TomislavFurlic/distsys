@@ -40,6 +40,7 @@ python3 app3.py
 python3 app4.py
 ```
 5. Pristupite mikroservisima šaljući zahtjeve na odgovarajuće URL-ove u vašem pregledniku ili koristeći alat poput curl-a ili postman-a
+
 Primjeri curl naredbi:
 
 Dohvat prvih 100 redaka iz baze podataka:
