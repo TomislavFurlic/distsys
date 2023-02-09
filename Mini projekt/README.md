@@ -53,6 +53,6 @@ Napomena:
 - Prije pokretanja usluge, promijenite IP adrese i portove u kodu kako bi se podudarali s IP-ovima i portovima na kojima će usluge biti pokrenute.
 
 ## Upotreba
-Klijent.py je kod koji omogućuje klijentima slanje zahtjeva za brojanje riječi njihovog koda
-Worker kod (Worker.py, Worker2.py, Worker3.py, Worker4.py i Worker5.py) predstavljaju worker-e i sadrže rutu '/work' koja prima JSON objekt i vraća broj riječi u tome objektu.
-Master.py je glavni servis i on distribuira posao među workerima putem poziva na rutu '/work', a workeri će se registrirati i primati ID putem poziva na rutu '/register' na glavnom mikroservisu.
+- Klijent.py je kod koji omogućuje klijentima slanje zahtjeva za brojanje riječi njihovog koda.
+- Worker kod (Worker.py, Worker2.py, Worker3.py, Worker4.py i Worker5.py) predstavljaju worker-e i sadrže rutu '/work' koja prima JSON objekt i vraća broj riječi u tome objektu.
+- - Master.py je glavni servis i on distribuira posao među workerima putem poziva na rutu '/work', a workeri će se registrirati i primati ID putem poziva na rutu '/register' na glavnom mikroservisu.
